@@ -22,6 +22,8 @@ import { Observable } from 'rxjs/Observable';
 import { Form } from 'ionic-angular';
 
 import * as moment from 'moment';
+import 'moment/locale/es.js';
+moment.locale('es');
 const momentConstructor: (value?: any) => moment.Moment = (<any>moment).default || moment;
 
 export const ION_CALENDAR_CONTROL_VALUE_ACCESSOR: any = {
